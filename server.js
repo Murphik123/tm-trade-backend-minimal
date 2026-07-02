@@ -3,7 +3,19 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-require('dotenv').config();
+exports.register = async (req, res) => {
+  try {
+    const { name, phone, email, electronicKey, role, avatar, password } = req.body;
+    const userExists = await User.findOne({ $or: [{ email }, { phone }] });
+    if (userExists) return res.status(400).json({ message: 'Пользователь уже существует' });
+    const user = new User({ name, phone, email, electronicKey, role, avatar, password });
+    await user.save();
+    const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, { expiresIn: '7d' });
+    res.status(201).json({ token, user: { id: user._id, name, email, role, avatar } });
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+};
 
 const app = express();
 app.use(cors());
