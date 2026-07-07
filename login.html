@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>ZNW Platform | Авторизация</title>
+
+    <meta name="description"
+          content="Единая цифровая платформа Туркменистана">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="assets/css/login.css">
+
+</head>
+
+<body>
+
+<div id="particles"></div>
+
+<canvas id="backgroundCanvas"></canvas>
+
+<div class="background-grid"></div>
+
+<div class="background-glow glow-left"></div>
+
+<div class="background-glow glow-right"></div>
+
+<header class="login-header">
+
+    <div class="container">
+
+        <a href="index.html"
+           class="logo">
+
+            <div class="logo-icon">
+
+                Z
+
+            </div>
+
+            <div class="logo-text">
+
+                <h2>
+
+                    ZNW
+
+                </h2>
+
+                <span>
+
+                    National Digital Platform
+
+                </span>
+
+            </div>
+
+        </a>
+
+        <nav>
+
+            <a href="index.html">
+
+                Главная
+
+            </a>
+
+            <a href="#">
+
+                Возможности
+
+            </a>
+
+            <a href="#">
+
+                Поддержка
+
+            </a>
+
+            <a href="#">
+
+                Контакты
+
+            </a>
+
+        </nav>
+
+        <div class="language">
+
+            <button data-lang="ru">
+
+                RU
+
+            </button>
+
+            <button data-lang="tm">
+
+                TM
+
+            </button>
+
+            <button data-lang="en">
+
+                EN
+
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+<main class="login-page">
+
+<section class="login-section">
+
+<div class="login-left">
+
+<div class="platform-label">
+
+Единая цифровая экосистема
+
+</div>
+
+<h1>
+
+ZNW Platform
+
+</h1>
+
+<h2>
+
+Добро пожаловать
+
+в национальную цифровую платформу
+
+Туркменистана
+
+</h2>
+
+<p>
+
+Платформа объединяет электронную торговлю,
+
+банковские сервисы,
+
+государственные услуги,
+
+электронный документооборот,
+
+аналитику,
+
+искусственный интеллект,
+
+цифровые платежи
+
+и корпоративное взаимодействие.
+
+</p>
+
+<div class="feature-list">
+
+<div class="feature">
+
+<div class="feature-icon">
+
+✓
+
+</div>
+
+<div>
+
+Безопасная авторизация
+
+</div>
+
+</div>
+
+<div class="feature">
+
+<div class="feature-icon">
+
+✓
+
+</div>
+
+<div>
+
+Многофакторная идентификация
+
+</div>
+
+</div>
+
+<div class="feature">
+
+<div class="feature-icon">
+
+✓
+
+</div>
+
+<div>
+
+Поддержка ЭЦП
+
+</div>
+
+</div>
+
+<div class="feature">
+
+<div class="feature-icon">
+
+✓
+
+</div>
+
+<div>
+
+QR-вход
+
+</div>
+
+</div>
+
+<div class="feature">
+
+<div class="feature-icon">
+
+✓
+
+</div>
+
+<div>
+
+Шифрование данных
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="login-right">
+
+<div class="login-card">
+
+<div class="card-header">
+
+<h2>
+
+Авторизация
+
+</h2>
+
+<p>
+
+Введите данные своей учетной записи
+
+</p>
+
+</div>
+
+<form
+id="loginForm"
+autocomplete="off">
+
+<div class="input-group">
+
+<label>
+
+Email или телефон
+
+</label>
+
+<input
+
+type="text"
+
+id="login"
+
+placeholder="example@mail.com"
+
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>
+
+Пароль
+
+</label>
+
+<input
+
+type="password"
+
+id="password"
+
+placeholder="Введите пароль"
+
+required>
+
+</div>
+
+<div class="remember">
+
+<label>
+
+<input
+type="checkbox">
+
+<span>
+
+Запомнить меня
+
+</span>
+
+</label>
+
+<a href="#">
+
+Забыли пароль?
+
+</a>
+
+</div> 
+
+<div class="login-actions">
+
+<button
+type="submit"
+class="login-button">
+
+Войти
+
+</button>
+
+</div>
+
+<div class="divider">
+
+<span>
+
+или
+
+</span>
+
+</div>
+
+<div class="alternative-login">
+
+<button
+type="button"
+class="ecp-button">
+
+<svg
+width="22"
+height="22"
+viewBox="0 0 24 24"
+fill="none">
+
+<path
+d="M12 2L20 6V12C20 17 16.5 21 12 22C7.5 21 4 17 4 12V6L12 2Z"
+stroke="currentColor"
+stroke-width="2"/>
+
+</svg>
+
+<span>
+
+Войти с помощью ЭЦП
+
+</span>
+
+</button>
+
+<button
+type="button"
+class="qr-button">
+
+<svg
+width="22"
+height="22"
+viewBox="0 0 24 24"
+fill="none">
+
+<rect
+x="3"
+y="3"
+width="7"
+height="7"
+stroke="currentColor"
+stroke-width="2"/>
+
+<rect
+x="14"
+y="3"
+width="7"
+height="7"
+stroke="currentColor"
+stroke-width="2"/>
+
+<rect
+x="3"
+y="14"
+width="7"
+height="7"
+stroke="currentColor"
+stroke-width="2"/>
+
+<path
+d="M15 15H17V17H15Z"
+fill="currentColor"/>
+
+<path
+d="M19 15H21V17H19Z"
+fill="currentColor"/>
+
+<path
+d="M17 17H19V19H17Z"
+fill="currentColor"/>
+
+<path
+d="M19 19H21V21H19Z"
+fill="currentColor"/>
+
+<path
+d="M15 19H17V21H15Z"
+fill="currentColor"/>
+
+</svg>
+
+<span>
+
+Вход по QR-коду
+
+</span>
+
+</button>
+
+</div>
+
+<div class="security-panel">
+
+<div class="security-item">
+
+<div class="security-icon">
+
+🔒
+
+</div>
+
+<div>
+
+<h4>
+
+TLS 1.3
+
+</h4>
+
+<p>
+
+Защищенное соединение
+
+</p>
+
+</div>
+
+</div>
+
+<div class="security-item">
+
+<div class="security-icon">
+
+🛡
+
+</div>
+
+<div>
+
+<h4>
+
+AES-256
+
+</h4>
+
+<p>
+
+Шифрование данных
+
+</p>
+
+</div>
+
+</div>
+
+<div class="security-item">
+
+<div class="security-icon">
+
+🔑
+
+</div>
+
+<div>
+
+<h4>
+
+MFA
+
+</h4>
+
+<p>
+
+Многофакторная авторизация
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="register-block">
+
+<p>
+
+Еще нет учетной записи?
+
+</p>
+
+<a
+href="register.html"
+class="register-link">
+
+Создать аккаунт
+
+</a>
+
+</div>
+
+</form>
+
+</div>
+
+<div class="status-panel">
+
+<div class="status-card">
+
+<div class="status-title">
+
+Статус платформы
+
+</div>
+
+<div class="status-online">
+
+<span class="status-dot"></span>
+
+Все сервисы работают
+
+</div>
+
+</div>
+
+<div class="status-card">
+
+<div class="status-title">
+
+Активных пользователей
+
+</div>
+
+<div class="status-value">
+
+2 340 000+
+
+</div>
+
+</div>
+
+<div class="status-card">
+
+<div class="status-title">
+
+Сегодня обработано
+
+</div>
+
+<div class="status-value">
+
+183 450 операций
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     QR LOGIN MODAL
+====================================================== -->
+
+<div id="qrLoginModal"
+     class="modal">
+
+    <div class="modal-window">
+
+        <button class="modal-close"
+                data-close>
+
+            ✕
+
+        </button>
+
+        <div class="modal-header">
+
+            <h2>
+
+                Вход по QR-коду
+
+            </h2>
+
+            <p>
+
+                Отсканируйте QR-код мобильным приложением ZNW
+
+            </p>
+
+        </div>
+
+        <div class="qr-container">
+
+            <div class="qr-frame">
+
+                <img
+                    src="assets/images/qr-placeholder.svg"
+                    alt="QR Code">
+
+            </div>
+
+        </div>
+
+        <div class="modal-info">
+
+            <p>
+
+                QR-код обновляется автоматически каждые 60 секунд.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- =====================================================
+     DIGITAL SIGNATURE MODAL
+====================================================== -->
+
+<div id="ecpModal"
+     class="modal">
+
+    <div class="modal-window">
+
+        <button class="modal-close"
+                data-close>
+
+            ✕
+
+        </button>
+
+        <div class="modal-header">
+
+            <h2>
+
+                Электронная цифровая подпись
+
+            </h2>
+
+            <p>
+
+                Подключите сертификат ЭЦП
+
+            </p>
+
+        </div>
+
+        <div class="certificate-panel">
+
+            <div class="certificate-icon">
+
+                🔑
+
+            </div>
+
+            <h3>
+
+                Сертификат не выбран
+
+            </h3>
+
+            <p>
+
+                Выберите файл сертификата или токен.
+
+            </p>
+
+            <button
+                class="certificate-button">
+
+                Выбрать сертификат
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- =====================================================
+     TWO FACTOR AUTHORIZATION
+====================================================== -->
+
+<div id="otpModal"
+     class="modal">
+
+    <div class="modal-window small">
+
+        <button class="modal-close"
+                data-close>
+
+            ✕
+
+        </button>
+
+        <div class="modal-header">
+
+            <h2>
+
+                Подтверждение входа
+
+            </h2>
+
+            <p>
+
+                Введите одноразовый код
+
+            </p>
+
+        </div>
+
+        <form id="otpForm">
+
+            <div class="otp-group">
+
+                <input maxlength="1">
+
+                <input maxlength="1">
+
+                <input maxlength="1">
+
+                <input maxlength="1">
+
+                <input maxlength="1">
+
+                <input maxlength="1">
+
+            </div>
+
+            <button
+                class="verify-button"
+                type="submit">
+
+                Подтвердить
+
+            </button>
+
+        </form>
+
+        <div class="timer">
+
+            Код действителен
+
+            <span id="otpTimer">
+
+                02:00
+
+            </span>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- =====================================================
+     LOADING OVERLAY
+====================================================== -->
+
+<div id="loadingScreen">
+
+    <div class="loader">
+
+        <div class="loader-ring"></div>
+
+        <div class="loader-ring"></div>
+
+        <div class="loader-ring"></div>
+
+        <div class="loader-center">
+
+            ZNW
+
+        </div>
+
+    </div>
+
+    <div class="loading-text">
+
+        Выполняется безопасное подключение...
+
+    </div>
+
+</div>
+
+<!-- =====================================================
+     NOTIFICATION
+====================================================== -->
+
+<div id="notification"
+     class="notification">
+
+    <div class="notification-icon">
+
+        ✔
+
+    </div>
+
+    <div class="notification-content">
+
+        <h4>
+
+            Авторизация
+
+        </h4>
+
+        <p>
+
+            Добро пожаловать в систему.
+
+        </p>
+
+    </div>
+
+</div>
+
+<!-- =====================================================
+     FOOTER
+====================================================== -->
+
+<footer class="login-footer">
+
+    <div class="container">
+
+        <div class="footer-left">
+
+            © 2026 ZNW Platform
+
+        </div>
+
+        <div class="footer-center">
+
+            Национальная цифровая платформа Туркменистана
+
+        </div>
+
+        <div class="footer-right">
+
+            <a href="#">
+
+                Политика безопасности
+
+            </a>
+
+            <a href="#">
+
+                Конфиденциальность
+
+            </a>
+
+            <a href="#">
+
+                Поддержка
+
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- =====================================================
+     SERVICE COMPONENTS
+====================================================== -->
+
+<div id="toastContainer"></div>
+
+<div id="modalOverlay"></div>
+
+<div id="pageBlur"></div>
+
+<!-- =====================================================
+     AUDIO (опционально)
+====================================================== -->
+
+<audio id="notificationSound" preload="auto">
+    <source src="assets/audio/notification.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="successSound" preload="auto">
+    <source src="assets/audio/success.mp3" type="audio/mpeg">
+</audio>
+
+<!-- =====================================================
+     BACKGROUND EFFECTS
+====================================================== -->
+
+<div class="floating-elements">
+
+    <span class="floating-circle circle-1"></span>
+    <span class="floating-circle circle-2"></span>
+    <span class="floating-circle circle-3"></span>
+    <span class="floating-circle circle-4"></span>
+
+    <span class="floating-line line-1"></span>
+    <span class="floating-line line-2"></span>
+    <span class="floating-line line-3"></span>
+
+</div>
+
+<!-- =====================================================
+     VERSION
+====================================================== -->
+
+<div class="system-version">
+
+    <span>
+
+        ZNW Platform
+
+    </span>
+
+    <span>
+
+        Version 1.0.0
+
+    </span>
+
+</div>
+
+<!-- =====================================================
+     JAVASCRIPT
+====================================================== -->
+
+<script src="assets/js/app.js"></script>
+
+<script src="assets/js/hero.js"></script>
+
+<script src="assets/js/map.js"></script>
+
+<script src="assets/js/login.js"></script>
+
+<script>
+
+window.addEventListener("load",function(){
+
+    const loading=document.getElementById("loadingScreen");
+
+    setTimeout(function(){
+
+        loading.classList.add("hide");
+
+        setTimeout(function(){
+
+            loading.remove();
+
+        },600);
+
+    },1000);
+
+});
+
+</script>
+
+</main>
+
+</body>
+
+</html>
+
